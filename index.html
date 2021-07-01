@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/mods.css">
+    <title>Whatsapp replica</title>
+</head>
+<body>
+    <div class="big-box">
+        <div class="bg-top"></div>
+        <div class="bg-bottom">
+            <div id="box" class="container">
+                <div class="row">
+                    <div class="sidebar col-lg-4 col-md-4 col-sm-6 col-6">
+                        <div class="user-panel container d-flex justify-content-between align-content-center py-3">
+                            <img src="" alt="">
+                            <span><input type="text"></span>
+                            <div class="up-buttons text-muted">
+                                <i class="fas fa-circle-notch"></i>
+                                <i class="fas fa-comment-alt ms-3"></i>
+                                <i class="fas fa-ellipsis-v ms-3"></i>
+                            </div>
+                        </div>
+                        <div class="notif-alert p-3">
+                            <div class="w-circle me-3"><i class="fas fa-bell-slash"></i></div>
+                            <div>
+                                <p class="b-text m-0">Ricevi notifiche di nuovi messaggi</p>
+                                <p class="s-text m-0"><u>Attiva notifiche desktop</u></p>
+                            </div>
+                        </div>
+                        <div class="contacts-box">
+                            <div class="searchbar mb-2 p-2">
+                                <i class="fas fa-search mx-2"></i>
+                                <input type="text" class="s-text" placeholder="Cerca o inizia una nuova chat">
+                            </div>
+                            <div v-for="contact in contactsList" class="contacts-list mt-1 p-2">
+                                <img :src="pfp(contact.avatar)" alt="pfp">
+                                <span class="b-text">{{contact.name}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texts-window col-lg-8 col-md-8 col-sm-6 col-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

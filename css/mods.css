@@ -1,0 +1,95 @@
+.big-box {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-top {
+    background: #429488;
+    width: 100%;
+    height: 10%;
+}
+
+.bg-bottom {
+    background: #dadbd5;
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+#box {
+    height: 700px;
+    background: #eeeeee;
+    position: absolute;
+    z-index: 9999;
+    top: -5%;
+    left: 15%;
+}
+
+.sidebar {
+    height: 100%;
+    padding: 0;
+}
+
+.user-panel {
+    background: #eaeaea;
+    height: 20%;
+}
+
+.notif-alert {
+    background: #9fd8f8;
+    align-items: center;
+    display: flex;
+    height: 20%;
+}
+
+.w-circle {
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background:#fff;
+    color: #9fd8f8;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.contacts-box {
+    background: #fafafa;
+    height: 80%;
+    padding: 10px 10px 0 0;
+}
+
+.searchbar {
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.searchbar input {
+    width: 85%;
+    border: 0;
+}
+
+.contacts-list {
+    background: #fff;
+}
+
+.contacts-list img {
+    border-radius: 50%;
+    width: 10%;
+}
+
+/*       utilities       */
+
+.b-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.s-text {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6c757d;
+}
